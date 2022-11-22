@@ -11,6 +11,9 @@ cd python-api-rabbit-protobuf-usage
 python -m venv venv
 ```
 ```console
+source venv/bin/activate
+```
+```console
 pip install -r requirements.txt
 ```
 
