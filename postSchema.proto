@@ -1,0 +1,22 @@
+syntax = 'proto3';
+
+package redditPost;
+
+message PostList{
+  message Post{
+    string name = 1;
+    string subreddit = 2;
+    string author_fullname = 3;
+    string title = 4;
+    string subreddit_name_prefixed = 5;
+    int32 ups = 6;
+    string thumbnail = 7;
+    float created = 8;
+    string subreddit_id = 9;
+    string id = 10;
+    string url = 11;
+    int32 num_comments = 12;
+    int32 total_awards_received = 13;
+  }
+  repeated Post posts = 1;
+}
